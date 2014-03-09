@@ -1,4 +1,4 @@
-package com.whirlwin.whirlwin;
+package com.whirlwin.example;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

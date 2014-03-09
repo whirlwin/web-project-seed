@@ -1,4 +1,4 @@
-package com.whirlwin.whirlwin.config
+package com.whirlwin.example.config
 
 import com.mongodb.Mongo
 import org.springframework.context.annotation.Configuration
@@ -11,7 +11,7 @@ class MongoConfig extends AbstractMongoConfiguration {
 
     @Override
     protected String getDatabaseName() {
-        return "whirlwin"
+        return "mvc"
     }
 
     @Override

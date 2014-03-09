@@ -1,4 +1,4 @@
-package com.whirlwin.whirlwin.config
+package com.whirlwin.example.config
 
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.ComponentScan
@@ -10,7 +10,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = "com.whirlwin.whirlwin")
+@ComponentScan(basePackages = "com.whirlwin.example")
 class AppConfig extends WebMvcConfigurerAdapter {
 
     @Override

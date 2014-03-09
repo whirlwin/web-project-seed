@@ -4,10 +4,10 @@ apply plugin: 'war'
 apply plugin: 'jetty'
 apply plugin: 'groovy'
 
-group = 'com.whirlwin'
+group = 'com.example'
 version = '1.0-SNAPSHOT'
 
-description = """whirlwin"""
+description = """web project seed"""
 
 sourceCompatibility = 1.7
 targetCompatibility = 1.7
