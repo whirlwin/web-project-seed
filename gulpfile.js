@@ -8,11 +8,15 @@ var paths = {
 };
 
 gulp.task('scripts', function() {
-   return gulp.src(paths.scripts)
+  return gulp.src(paths.scripts)
        .pipe(gulpCoffee())
        .pipe(gulpUglify())
        .pipe(gulpConcat('out.min.js'))
        .pipe(gulp.dest(''));
 });
 
-gulp.task('default', ['scripts']);
+gulp.task('watch', function() {
+  gulp.watch(paths.scripts, ['scripts']);
+});
+
+gulp.task('default', ['scripts', 'watch']);
