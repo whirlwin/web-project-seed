@@ -4,11 +4,6 @@ import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.data.mongodb.core.MongoOperations
 import org.springframework.stereotype.Repository
 
-class User {
-    def name
-    def age
-}
-
 @Repository
 class ExampleRepository {
 
