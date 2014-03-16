@@ -1,6 +1,3 @@
-<%@ page %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-
 <!DOCTYPE html>
 <html ng-app="whirlwin">
     <head>
@@ -20,18 +17,14 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="/blog">Blog</a></li>
-                        <li><a href="/login">Login</a></li>
+                        <li><a href="#/foo">foo</a></li>
+                        <li><a href="#/bar">bar</a></li>
+                        <li><a href="#/baz">baz</a></li>
                     </ul>
                 </div>
             </div>
             <div ng-view/>
         </div>
-
-        <!--
-        <script src="/assets/dist/libs.js"></script>
-        <script src="/assets/dist/custom.js"></script>
-        -->
         <script src="/assets/dist/all.js"></script>
     </body>
 </html>

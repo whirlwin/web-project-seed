@@ -2,14 +2,12 @@ App = angular.module 'whirlwin', ['ngRoute']
 
 App.config ['$locationProvider', '$routeProvider', ($locationProvider, $routeProvider) ->
 
-  $locationProvider.html5Mode true
+  # May not work in IE
+  # $locationProvider.html5Mode false
 
-  console.log 'foo bar'
-
-  ###
   $routeProvider
-    .when('/',      templateUrl: '/views/index')
-    .when('/login', templateUrl: '/views/login')
-    .when('/blog',  templateUrl: '/views/blog/index')
-  ###
+    .when('/',    templateUrl: '/assets/dist/html/foo.html')
+    .when('/foo', templateUrl: '/assets/dist/html/foo.html')
+    .when('/bar', templateUrl: '/assets/dist/html/other/bar.html')
+    .when('/baz', templateUrl: '/assets/dist/html/other/baz.html')
 ]
