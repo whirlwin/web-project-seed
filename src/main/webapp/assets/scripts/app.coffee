@@ -4,6 +4,8 @@ App.config ['$locationProvider', '$routeProvider', ($locationProvider, $routePro
 
   $locationProvider.html5Mode true
 
+  console.log 'foo bar'
+
   ###
   $routeProvider
     .when('/',      templateUrl: '/views/index')

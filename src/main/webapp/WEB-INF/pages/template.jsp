@@ -5,8 +5,7 @@
 <html ng-app="whirlwin">
     <head>
         <title>whirlwin</title>
-        <link rel="stylesheet" href="/assets/dist/libs.css"/>
-        <link rel="stylesheet" href="/assets/dist/custom.css"/>
+        <link rel="stylesheet" href="/assets/dist/all.css"/>
     </head>
     <body>
         <div class="container">
@@ -29,7 +28,10 @@
             <div ng-view/>
         </div>
 
+        <!--
         <script src="/assets/dist/libs.js"></script>
         <script src="/assets/dist/custom.js"></script>
+        -->
+        <script src="/assets/dist/all.js"></script>
     </body>
 </html>
