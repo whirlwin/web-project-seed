@@ -6,7 +6,7 @@
     <head>
         <title>whirlwin</title>
         <link rel="stylesheet" href="/assets/lib/original/bootstrap/css/bootstrap.css"/>
-        <link rel="stylesheet" href="/assets/custom/css/main.css"/>
+        <link rel="stylesheet" href="/assets/styles/out.css"/>
     </head>
     <body>
         <div class="container">
@@ -33,8 +33,6 @@
         <script src="/assets/lib/original/bootstrap/js/bootstrap.js"></script>
         <script src="/assets/lib/original/angular/angular.js"></script>
         <script src="/assets/lib/original/angular/angular-route.js"></script>
-        <script src="/assets/custom/js/app.js"></script>
-        <script src="/assets/custom/js/index-controller.js"></script>
-        <script src="/assets/custom/js/blog/index-controller.js"></script>
+        <script src="/assets/scripts/out.js"></script>
     </body>
 </html>

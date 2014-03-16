@@ -5,7 +5,8 @@
 .gradle/
 .idea/
 env.json
-out.min.js
+src/main/webapp/assets/scripts/out.js
+src/main/webapp/assets/styles/out.css
 build/
 node_modules/
 target/
