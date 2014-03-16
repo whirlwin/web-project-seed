@@ -89,9 +89,15 @@
 
         <!-- SLF4J -->
         <dependency>
-            <groupId>org.apache.logging.log4j.adapters</groupId>
-            <artifactId>slf4j-impl</artifactId>
-            <version>2.0-beta2</version>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.6</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>1.7.6</version>
         </dependency>
 
         <!-- Testing -->
