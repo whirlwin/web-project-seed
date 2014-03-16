@@ -4,6 +4,8 @@
 *.swp
 .gradle/
 .idea/
+env.json
+out.min.js
 build/
 node_modules/
 target/

@@ -18,9 +18,22 @@ The following is a listing of the major technologies used in order og relative s
 # Local development
 There are two ways of building and running the web application, both of which are listed below.
 
-## Maven
+## Prerequisites
+
+Create an `env.json` file in the project root based on the following example `env.json` file:
+
+    {
+      "env":           "dev",
+      "compressFiles": false
+    }
+
+Edit the file accordingly if need be.
+
+## Building
+
+### Maven
 1. Build the project: `mvn clean install`
 2. Deploy into a servlet container like Apache Tomcat
 
-## Gradle
+### Gradle
 1. Build and start Jetty: `gradle jettyRunWar`
