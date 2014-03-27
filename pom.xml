@@ -10,6 +10,7 @@
     <name>whirlwin</name>
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring.version>4.0.2.RELEASE</spring.version>
     </properties>
 
@@ -147,6 +148,7 @@
             <!-- Execute tests -->
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.17</version>
                 <configuration>
                     <includes>
                         <include>**/*Test.java</include>
