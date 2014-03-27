@@ -50,7 +50,7 @@ class ExampleControllerTest {
     @Test
     void testCreateUser() {
         mockMvc.perform(post("/users"))
-                .andExpect(status().isMovedTemporarily())
+                .andExpect(status().isCreated())
 
         verify(exampleRepository).insertUser(any(User.class))
     }
