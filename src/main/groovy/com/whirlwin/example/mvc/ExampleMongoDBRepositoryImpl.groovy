@@ -6,7 +6,7 @@ import org.springframework.data.mongodb.core.MongoOperations
 import org.springframework.stereotype.Repository
 
 @Repository
-class ExampleRepositoryImpl implements ExampleRepository {
+class ExampleMongoDBRepositoryImpl implements ExampleRepository {
 
     @Autowired
     private MongoOperations mongoOperations;

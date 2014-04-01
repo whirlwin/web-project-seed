@@ -25,7 +25,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 class ExampleControllerTest {
 
     @Mock
-    ExampleRepository exampleRepository
+    ExampleService exampleService
 
     @InjectMocks
     ExampleController exampleController
@@ -44,7 +44,7 @@ class ExampleControllerTest {
                 .andExpect(content().contentTypeCompatibleWith("application/json"))
                 .andExpect(content().encoding("UTF-8"))
 
-        verify(exampleRepository).findUsers()
+        verify(exampleService).findUsers()
     }
 
     @Test
@@ -52,6 +52,6 @@ class ExampleControllerTest {
         mockMvc.perform(post("/users"))
                 .andExpect(status().isCreated())
 
-        verify(exampleRepository).insertUser(any(User.class))
+        verify(exampleService).insertUser(any(User.class))
     }
 }

@@ -13,23 +13,23 @@ import org.springframework.web.bind.annotation.ResponseStatus
 @Controller
 class ExampleController {
 
-    private ExampleRepository exampleRepository
+    private final ExampleService exampleService
 
     @Autowired
-    ExampleController(ExampleRepository exampleRepository) {
-        this.exampleRepository = exampleRepository
+    ExampleController(ExampleService exampleService) {
+        this.exampleService = exampleService
     }
 
     @RequestMapping(value = "/users", method = RequestMethod.GET)
     @ResponseBody
     def findUsers() {
-        exampleRepository.findUsers()
+        exampleService.findUsers()
     }
 
     @RequestMapping(value = "/users", method = RequestMethod.POST)
     @ResponseStatus(HttpStatus.CREATED)
     def createUser() {
-        exampleRepository.insertUser(new User(name: 'John Doe', age: 21))
+        exampleService.insertUser(new User(name: 'John Doe', age: 21))
         new ResponseEntity<String>("linkToResource", HttpStatus.CREATED)
     }
 }
