@@ -1,7 +1,6 @@
 package com.whirlwin.example.mvc
 
 import org.springframework.beans.factory.annotation.Autowired
-import org.springframework.cache.annotation.Cacheable
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import org.springframework.stereotype.Controller
@@ -10,8 +9,13 @@ import org.springframework.web.bind.annotation.RequestMethod
 import org.springframework.web.bind.annotation.ResponseBody
 import org.springframework.web.bind.annotation.ResponseStatus
 
+import javax.annotation.Resource
+
 @Controller
 class ExampleController {
+
+    @Resource
+    private ExampleConstrettoBean exampleConstrettoBean
 
     private final ExampleService exampleService
 

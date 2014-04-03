@@ -11,11 +11,11 @@ class MongoConfig extends AbstractMongoConfiguration {
 
     @Override
     protected String getDatabaseName() {
-        return "example-db"
+        "example-db"
     }
 
     @Override
     Mongo mongo() throws Exception {
-        return new Mongo()
+        new Mongo()
     }
 }

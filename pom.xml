@@ -7,15 +7,15 @@
     <artifactId>whirlwin</artifactId>
     <packaging>war</packaging>
     <version>1.0-SNAPSHOT</version>
-    <name>whirlwin</name>
+    <name>web-project-seed</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring.version>4.0.2.RELEASE</spring.version>
+        <constretto.version>2.1.4</constretto.version>
     </properties>
 
     <dependencies>
-
         <!-- Spring -->
         <dependency>
             <groupId>org.springframework</groupId>
@@ -88,13 +88,24 @@
             <version>1.9.13</version>
         </dependency>
 
+        <!-- Constretto -->
+        <dependency>
+            <groupId>org.constretto</groupId>
+            <artifactId>constretto-core</artifactId>
+            <version>${constretto.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.constretto</groupId>
+            <artifactId>constretto-spring</artifactId>
+            <version>${constretto.version}</version>
+        </dependency>
+
         <!-- SLF4J -->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
             <version>1.7.6</version>
         </dependency>
-
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
@@ -121,7 +132,7 @@
     </dependencies>
 
     <build>
-        <finalName>whirlwin</finalName>
+        <finalName>web-project-seed</finalName>
         <plugins>
 
             <plugin>
