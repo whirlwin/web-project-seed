@@ -1,9 +1,4 @@
-*.iml
-*.ipr
-*.iws
-*.swp
 .gradle/
-.idea/
 env.json
 src/main/webapp/assets/dist/
 build/
