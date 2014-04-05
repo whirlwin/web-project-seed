@@ -1,11 +1,11 @@
 Web Project Seed
-=============
+================
 
 Have it JAR way
 
 # Introduction
 This is a small project for getting up to speed when creating a new web application from scratch using various
-technologies.
+technologies. It consists of two modules; `web-app` and `integration-tests`.
 
 ## Technologies
 The following is a listing of the major technologies used in order og relative significance.
@@ -24,9 +24,8 @@ There are two ways of building and running the web application, both of which ar
 
 ## Prerequisites
 
-
 ### Create the `env.json` file
-Create an `env.json` file in the project root based on the following example `env.json` file:
+Create an `env.json` file in the `web-app` module based on the following example `env.json` file:
 
     {
       "env":        "dev",
@@ -40,7 +39,7 @@ Edit the file accordingly if need be.
 
 1. Firstly, install gulp so it is available from the command line: `npm install -g gulp`
 
-2. Secondly, install all other dependencies: `npm install`
+2. Secondly, install all other dependencies: `npm install` from the `web-app` module
 
 ## Building
 
@@ -49,4 +48,4 @@ Edit the file accordingly if need be.
 2. Deploy into a servlet container like Apache Tomcat
 
 ### Gradle
-1. Build and start Jetty: `gradle jettyRunWar`
+1. Build and start Jetty: `gradle jettyRunWar` from the `web-app` module
