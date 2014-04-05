@@ -1,0 +1,31 @@
+{
+  "name": "web-project-seed",
+  "version": "0.0.0",
+  "description": "A simple web project seed.",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/whirlwin/web-project-seed.git"
+  },
+  "author": "whirlwin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/whirlwin/web-project-seed/issues"
+  },
+  "homepage": "https://github.com/whirlwin/web-project-seed",
+  "devDependencies": {
+    "gulp":            "3.5.5",
+    "gulp-coffee":     "1.4.1",
+    "gulp-concat":     "2.1.7",
+    "gulp-if":         "0.0.5",
+    "gulp-jade":       "0.4.2",
+    "gulp-minify-css": "0.3.0",
+    "gulp-order":      "1.0.6",
+    "gulp-stylus":     "0.1.0",
+    "gulp-uglify":     "0.2.1"
+  }
+}

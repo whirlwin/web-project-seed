@@ -17,6 +17,7 @@
 
     <modules>
         <module>web-project-seed-web</module>
+        <module>web-project-seed-integration-tests</module>
     </modules>
 
     <dependencies>
