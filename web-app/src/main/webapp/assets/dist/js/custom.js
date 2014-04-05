@@ -1,0 +1,2 @@
+(function(){var t;t=angular.module("whirlwin",["ngRoute"]),t.config(["$locationProvider","$routeProvider",function(t,e){return e.when("/",{templateUrl:"/assets/dist/html/foo.html"}).when("/foo",{templateUrl:"/assets/dist/html/foo.html"}).when("/bar",{templateUrl:"/assets/dist/html/other/bar.html"}).when("/baz",{templateUrl:"/assets/dist/html/other/baz.html"})}])}).call(this);
+(function(){angular.module("whirlwin").controller("IndexController",function(){})}).call(this);
