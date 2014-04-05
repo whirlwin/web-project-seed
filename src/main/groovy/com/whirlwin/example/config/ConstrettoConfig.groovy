@@ -14,13 +14,13 @@ import org.springframework.context.annotation.Configuration
 class ConstrettoConfig {
 
     @Bean
-    static ConstrettoConfiguration constrettoConfiguration() {
+    ConstrettoConfiguration constrettoConfiguration() {
         new ConstrettoBuilder().createPropertiesStore().addResource(
                 Resource.create("classpath:/properties.properties")).done().getConfiguration()
     }
 
     @Bean
-    static ConfigurationAnnotationConfigurer configurationAnnotationConfigurer(ConstrettoConfiguration configuration) {
+    ConfigurationAnnotationConfigurer configurationAnnotationConfigurer(ConstrettoConfiguration configuration) {
         new ConfigurationAnnotationConfigurer(configuration, new DefaultAssemblyContextResolver());
     }
 }
