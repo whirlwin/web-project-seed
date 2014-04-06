@@ -1,1 +1,1 @@
-angular.module('whirlwin').controller 'IndexController', ->
+angular.module('web-project-seed').controller 'IndexController', ->

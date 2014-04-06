@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html ng-app="whirlwin">
+<html ng-app="web-project-seed">
     <head>
-        <title>whirlwin</title>
+        <title>Web Project Seed</title>
         <link rel="stylesheet" href="assets/dist/all.css"/>
     </head>
     <body>
