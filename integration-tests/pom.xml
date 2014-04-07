@@ -8,7 +8,7 @@
         <groupId>com.whirlwin</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    
+
     <modelVersion>4.0.0</modelVersion>
     <artifactId>web-project-seed-integration-tests</artifactId>
     <packaging>war</packaging>
