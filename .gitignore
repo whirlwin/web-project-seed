@@ -1,6 +1,6 @@
 .gradle/
 env.json
-web/src/main/webapp/assets/dist/
+web-app/src/main/webapp/assets/dist/
 build/
 node_modules/
 **/target/

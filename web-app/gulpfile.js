@@ -33,7 +33,7 @@ gulp.task('libJs', function() {
       .pipe(gulp.dest(DIST_JS_PATH))
 });
 
-// Combine custom scripts and library scripts into one file, depends the handling of custom and library JS
+// Combine custom scripts and library scripts into one file, depends on the handling of custom and library JS
 gulp.task('combineJs', ['customCoffee', 'libJs'], function() {
   return gulp.src(DIST_JS_PATH + '*.js')
       .pipe(gulpOrder(['libs.js', 'custom.js']))
