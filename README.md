@@ -17,7 +17,8 @@ The following is a listing of the major technologies used in order og relative s
 4. [Gradle](http://www.gradle.org/)
 5. [Maven](http://maven.apache.org/)
 6. [Node.js](http://nodejs.org/)
-6. [gulp.js](http://gulpjs.com/)
+7. [Selenium](http://docs.seleniumhq.org/)
+8. [gulp.js](http://gulpjs.com/)
 
 # Local development
 There are two ways of building and running the web application, both of which are listed below.
@@ -44,8 +45,12 @@ Edit the file accordingly if need be.
 ## Building
 
 ### Maven
-1. Build the project: `mvn clean install`
+1. Build the project: `mvn clean install` from the `web-app` sub-module.
 2. Deploy into a servlet container like Apache Tomcat
 
 ### Gradle
 1. Build and start Jetty: `gradle jettyRunWar` from the `web-app` module
+
+## Running integration tests
+
+To run the integration tests run `mvn verify` from the `integration-tests` sub-module.

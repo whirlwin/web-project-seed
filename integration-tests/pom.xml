@@ -25,6 +25,9 @@
     <build>
         <finalName>web-project-seed-integration-tests</finalName>
         <plugins>
+
+            <!-- Small hack: Copy the built war file from the web-app module into the integration-tests module with the
+            exact same name, so it is deployed by the Cargo plugin -->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
