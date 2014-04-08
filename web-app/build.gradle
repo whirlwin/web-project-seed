@@ -6,11 +6,10 @@ apply plugin: 'groovy'
 
 group = 'com.example'
 version = '1.0-SNAPSHOT'
-
 description = 'web project seed'
-
 sourceCompatibility = 1.7
 targetCompatibility = 1.7
+jettyRunWar.contextPath = ''
 
 repositories {
      maven { url "http://repo.maven.apache.org/maven2" }
@@ -41,4 +40,8 @@ dependencies {
     providedCompile 'javax.servlet:javax.servlet-api:3.1.0'
 }
 
-jettyRunWar.contextPath = ''
+task handleAssets(type: Exec) {
+    commandLine 'npm', 'run-script', 'build'
+}
+
+build.dependsOn handleAssets
