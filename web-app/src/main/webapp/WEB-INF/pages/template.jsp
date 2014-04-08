@@ -2,7 +2,7 @@
 <html ng-app="web-project-seed">
     <head>
         <title>Web Project Seed</title>
-        <link rel="stylesheet" href="assets/dist/all.css"/>
+        <link rel="stylesheet" href="assets/dist/css/all.css"/>
     </head>
     <body>
         <div class="container">
@@ -25,6 +25,6 @@
             </div>
             <div ng-view/>
         </div>
-        <script src="assets/dist/all.js"></script>
+        <script src="assets/dist/js/all.js"></script>
     </body>
 </html>

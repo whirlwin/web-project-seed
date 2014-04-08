@@ -1,6 +1,8 @@
 .gradle/
 env.json
+npm-debug.log
 web-app/src/main/webapp/assets/dist/
+web-app/src/main/webapp/assets/lib/
 build/
 node_modules/
 **/target/
