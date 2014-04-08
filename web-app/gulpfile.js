@@ -87,3 +87,5 @@ gulp.task('watch', function() {
 
 gulp.task('default',
     ['customCoffee', 'libJs', 'customStylus', 'libCss', 'combineJs', 'combineCss', 'customJade', 'watch']);
+
+gulp.task('build', ['customCoffee', 'libJs', 'customStylus', 'libCss', 'combineJs', 'combineCss', 'customJade']);
