@@ -1,11 +1,12 @@
 {
-  "name": "web-project-seed",
-  "version": "0.0.1",
-  "homepage": "https://github.com/whirlwin/web-project-seed",
-  "authors": [
-    "whirlwin"
-  ],
-  "description": "Web project seed",
-  "license": "MIT",
-  "private": true
+  "name":         "web-project-seed",
+  "version":      "0.0.1",
+  "homepage":     "https://github.com/whirlwin/web-project-seed",
+  "authors":      [ "whirlwin" ],
+  "description":  "Web project seed",
+  "license":      "MIT",
+  "private":      true,
+  "dependencies": {
+    "angular": "~1.2.0"
+  }
 }

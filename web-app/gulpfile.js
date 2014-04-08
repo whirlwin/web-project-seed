@@ -14,7 +14,7 @@ const DIST_PATH          = ASSETS_PATH + 'dist/';
 const DIST_JS_PATH       = DIST_PATH + 'js/';
 const DIST_CSS_PATH      = DIST_PATH + 'css/';
 const DIST_HTML_PATH     = DIST_PATH + 'html/';
-const LIB_PATH           = ASSETS_PATH + 'lib/' + (env.compressed ? 'minified' : 'original');
+const LIB_PATH           = ASSETS_PATH + 'lib/';
 const CUSTOM_COFFEE_PATH = [ASSETS_PATH + 'scripts/**/*.coffee'];
 const CUSTOM_STYLUS_PATH = [ASSETS_PATH + 'styles/**/*.styl'];
 const CUSTOM_JADE_PATH   = [ASSETS_PATH + 'views/**/*.jade']
@@ -28,7 +28,7 @@ gulp.task('customCoffee', function() {
 });
 
 gulp.task('libJs', function() {
-  return gulp.src(LIB_PATH + '/**/*.js')
+  return gulp.src(getLibPath('.js'))
       .pipe(gulpConcat('libs.js'))
       .pipe(gulp.dest(DIST_JS_PATH))
 });
@@ -77,3 +77,9 @@ gulp.task('watch', function() {
 });
 
 gulp.task('default', ['customCoffee', 'libJs', 'customStylus', 'libCss', 'combineJs', 'combineCss', 'customJade','watch']);
+
+function getLibPath(extension) {
+  return env.compressed ?
+      LIB_PATH + '**/*.min' + extension :
+      [LIB_PATH + '**/*' + extension, '!' + LIB_PATH + '**/*.min' + extension];
+}
