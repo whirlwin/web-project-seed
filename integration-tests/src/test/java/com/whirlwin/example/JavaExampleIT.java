@@ -1,3 +1,5 @@
+package com.whirlwin.example;
+
 import junit.framework.TestCase;
 import org.junit.After;
 import org.junit.Before;
@@ -11,7 +13,7 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
 @RunWith(JUnit4.class)
-public final class ExampleIT extends TestCase {
+public final class JavaExampleIT extends TestCase {
 
     private static final String BASE_URL = "http://localhost:10001/web-project-seed-integration-tests";
 
